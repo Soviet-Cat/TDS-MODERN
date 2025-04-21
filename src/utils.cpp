@@ -16,3 +16,17 @@ std::string getAppDataPath()
     }
 }
 
+std::string pathToUrl(const std::string& path)
+{
+    std::string url = path;
+    for (char& c : url)
+    {
+        if (c == '\\')
+        {
+            c = '/';
+        }
+    }
+    return url;
+}
+
+
