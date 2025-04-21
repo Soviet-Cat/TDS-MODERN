@@ -1,0 +1,11 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj: dyndep
+
+build CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj: dyndep
+
+build CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj: dyndep
+
+build CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj: dyndep
+
+build CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj: dyndep
+

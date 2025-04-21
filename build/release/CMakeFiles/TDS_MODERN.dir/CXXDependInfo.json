@@ -1,0 +1,51 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release",
+	"dir-cur-src" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN",
+	"dir-top-bld" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release",
+	"dir-top-src" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\harri\\OneDrive\\Desktop\\TDS MODERN\\src",
+		"C:\\Users\\harri\\OneDrive\\Desktop\\TDS MODERN\\curl\\include\\curl"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release/CMakeFiles/TDS_MODERN.dir",
+	"sources" : 
+	{
+		"CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/src/app.cpp"
+		},
+		"CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/src/assets.cpp"
+		},
+		"CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/src/config.cpp"
+		},
+		"CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/src/main.cpp"
+		},
+		"CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/harri/OneDrive/Desktop/TDS MODERN/src/utils.cpp"
+		}
+	}
+}

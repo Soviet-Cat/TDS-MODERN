@@ -1,0 +1,3 @@
+C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/debug/CMakeFiles/TDS_MODERN.dir
+C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/debug/CMakeFiles/edit_cache.dir
+C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/debug/CMakeFiles/rebuild_cache.dir

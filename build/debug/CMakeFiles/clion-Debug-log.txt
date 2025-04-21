@@ -1,0 +1,4 @@
+E:\CMake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=E:/msys64/mingw64/bin/ninja.exe -DCMAKE_C_COMPILER=E:/msys64/mingw64/bin/cc.exe -DCMAKE_CXX_COMPILER=E:/msys64/mingw64/bin/c++.exe -G Ninja -S "C:\Users\harri\OneDrive\Desktop\TDS MODERN" -B "C:\Users\harri\OneDrive\Desktop\TDS MODERN\build\debug"
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/debug
