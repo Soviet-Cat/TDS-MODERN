@@ -603,3 +603,41 @@ events:
       Running the CXX compiler's linker: "E:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.44
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "E:/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "E:/CMake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "E:/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "E:/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/msys64/mingw64/lib/cmake/boost_atomic-1.88.0-shared/boost_atomic-config.cmake:31 (find_dependency)"
+      - "E:/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/msys64/mingw64/lib/cmake/boost_thread-1.88.0-shared/boost_thread-config.cmake:13 (find_dependency)"
+      - "E:/msys64/mingw64/lib/cmake/Boost-1.88.0/BoostConfig.cmake:67 (find_package)"
+      - "E:/msys64/mingw64/lib/cmake/Boost-1.88.0/BoostConfig.cmake:128 (boostcfg_find_component)"
+      - "CMakeLists.txt:19 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release/CMakeFiles/CMakeScratch/TryCompile-hu0g5t"
+      binary: "C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release/CMakeFiles/CMakeScratch/TryCompile-hu0g5t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release/CMakeFiles/CMakeScratch/TryCompile-hu0g5t'
+        
+        Run Build Command(s): E:/msys64/mingw64/bin/ninja.exe -v cmTC_fb1b6
+        [1/2] E:\\msys64\\mingw64\\bin\\cc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_fb1b6.dir/src.c.obj -c "C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release/CMakeFiles/CMakeScratch/TryCompile-hu0g5t/src.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && E:\\msys64\\mingw64\\bin\\cc.exe   CMakeFiles/cmTC_fb1b6.dir/src.c.obj -o cmTC_fb1b6.exe -Wl,--out-implib,libcmTC_fb1b6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

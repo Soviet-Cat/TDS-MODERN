@@ -53,7 +53,7 @@ build CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj.ddi: CXX_SCAN__TDS_MODERN_Debug 
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\app.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\TDS_MODERN.dir\src\app.cpp.obj.ddi
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJ_FILE = CMakeFiles\TDS_MODERN.dir\src\app.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\TDS_MODERN.dir\src\app.cpp.obj.ddi.i
 
@@ -61,7 +61,7 @@ build CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj: CXX_COMPILER__TDS_MODERN_scanne
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\app.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\TDS_MODERN.dir\src\app.cpp.obj.modmap
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJECT_DIR = CMakeFiles\TDS_MODERN.dir
   OBJECT_FILE_DIR = CMakeFiles\TDS_MODERN.dir\src
   dyndep = CMakeFiles/TDS_MODERN.dir/CXX.dd
@@ -70,7 +70,7 @@ build CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj.ddi: CXX_SCAN__TDS_MODERN_Debug
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\TDS_MODERN.dir\src\main.cpp.obj.ddi
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJ_FILE = CMakeFiles\TDS_MODERN.dir\src\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\TDS_MODERN.dir\src\main.cpp.obj.ddi.i
 
@@ -78,7 +78,7 @@ build CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj: CXX_COMPILER__TDS_MODERN_scann
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\TDS_MODERN.dir\src\main.cpp.obj.modmap
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJECT_DIR = CMakeFiles\TDS_MODERN.dir
   OBJECT_FILE_DIR = CMakeFiles\TDS_MODERN.dir\src
   dyndep = CMakeFiles/TDS_MODERN.dir/CXX.dd
@@ -87,7 +87,7 @@ build CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj.ddi: CXX_SCAN__TDS_MODERN_Deb
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\config.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\TDS_MODERN.dir\src\config.cpp.obj.ddi
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJ_FILE = CMakeFiles\TDS_MODERN.dir\src\config.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\TDS_MODERN.dir\src\config.cpp.obj.ddi.i
 
@@ -95,7 +95,7 @@ build CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj: CXX_COMPILER__TDS_MODERN_sca
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\config.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\TDS_MODERN.dir\src\config.cpp.obj.modmap
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJECT_DIR = CMakeFiles\TDS_MODERN.dir
   OBJECT_FILE_DIR = CMakeFiles\TDS_MODERN.dir\src
   dyndep = CMakeFiles/TDS_MODERN.dir/CXX.dd
@@ -104,7 +104,7 @@ build CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj.ddi: CXX_SCAN__TDS_MODERN_Debu
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\utils.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\TDS_MODERN.dir\src\utils.cpp.obj.ddi
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJ_FILE = CMakeFiles\TDS_MODERN.dir\src\utils.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\TDS_MODERN.dir\src\utils.cpp.obj.ddi.i
 
@@ -112,7 +112,7 @@ build CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj: CXX_COMPILER__TDS_MODERN_scan
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\utils.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\TDS_MODERN.dir\src\utils.cpp.obj.modmap
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJECT_DIR = CMakeFiles\TDS_MODERN.dir
   OBJECT_FILE_DIR = CMakeFiles\TDS_MODERN.dir\src
   dyndep = CMakeFiles/TDS_MODERN.dir/CXX.dd
@@ -121,7 +121,7 @@ build CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj.ddi: CXX_SCAN__TDS_MODERN_Deb
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\assets.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\TDS_MODERN.dir\src\assets.cpp.obj.ddi
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJ_FILE = CMakeFiles\TDS_MODERN.dir\src\assets.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\TDS_MODERN.dir\src\assets.cpp.obj.ddi.i
 
@@ -129,7 +129,7 @@ build CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj: CXX_COMPILER__TDS_MODERN_sca
   DEP_FILE = CMakeFiles\TDS_MODERN.dir\src\assets.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\TDS_MODERN.dir\src\assets.cpp.obj.modmap
   FLAGS = -static-libgcc -static-libstdc++ -static -g -std=gnu++26 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src" -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/include/curl"
+  INCLUDES = -I"C:/Users/harri/OneDrive/Desktop/TDS MODERN/src"
   OBJECT_DIR = CMakeFiles\TDS_MODERN.dir
   OBJECT_FILE_DIR = CMakeFiles\TDS_MODERN.dir\src
   dyndep = CMakeFiles/TDS_MODERN.dir/CXX.dd
@@ -144,9 +144,9 @@ build CMakeFiles/TDS_MODERN.dir/CXX.dd | C$:/Users/harri/OneDrive/Desktop/TDS$ M
 #############################################
 # Link the executable C:\Users\harri\OneDrive\Desktop\TDS MODERN\bin\TDS_MODERN.exe
 
-build C$:/Users/harri/OneDrive/Desktop/TDS$ MODERN/bin/TDS_MODERN.exe: CXX_EXECUTABLE_LINKER__TDS_MODERN_Debug CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj | C$:/Users/harri/OneDrive/Desktop/TDS$ MODERN/curl/lib/libcurl.a
+build C$:/Users/harri/OneDrive/Desktop/TDS$ MODERN/bin/TDS_MODERN.exe: CXX_EXECUTABLE_LINKER__TDS_MODERN_Debug CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj | E$:/msys64/mingw64/lib/liburlmon.a E$:/msys64/mingw64/lib/libwindowscodecs.a E$:/msys64/mingw64/lib/libd2d1.a
   FLAGS = -static-libgcc -static-libstdc++ -static -g
-  LINK_LIBRARIES = "C:/Users/harri/OneDrive/Desktop/TDS MODERN/curl/lib/libcurl.a"  -lws2_32  -lcrypt32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = E:/msys64/mingw64/lib/liburlmon.a  E:/msys64/mingw64/lib/libwindowscodecs.a  E:/msys64/mingw64/lib/libd2d1.a  -static  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TDS_MODERN.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

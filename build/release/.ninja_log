@@ -1,0 +1,19 @@
+# ninja log v6
+12	1222	7671678607774531	CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj.ddi	871af26a48f09f3c
+9	1388	7671678607746055	CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj.ddi	8a78922606396935
+3	1632	7671678607684596	CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj.ddi	d0e9fc5b883e485c
+15	1652	7671678607802622	CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj.ddi	b3bb5137422d6532
+6	1654	7671678607715891	CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj.ddi	907ca1ab639cd8ac
+1654	1687	7671678624495425	CMakeFiles/TDS_MODERN.dir/CXX.dd	87113f864c50f7bc
+1654	1687	7671678624495425	C:/Users/harri/OneDrive/Desktop/TDS MODERN/build/release/CMakeFiles/TDS_MODERN.dir/CXXModules.json	87113f864c50f7bc
+1654	1687	7671678624495425	CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj.modmap	87113f864c50f7bc
+1654	1687	7671678624495425	CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj.modmap	87113f864c50f7bc
+1654	1687	7671678624495425	CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj.modmap	87113f864c50f7bc
+1654	1687	7671678624495425	CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj.modmap	87113f864c50f7bc
+1654	1687	7671678624495425	CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj.modmap	87113f864c50f7bc
+1697	3882	7671678624631814	CMakeFiles/TDS_MODERN.dir/src/utils.cpp.obj	a4f64d92c785f0ce
+1692	5008	7671678624570147	CMakeFiles/TDS_MODERN.dir/src/main.cpp.obj	e6289271fe1990f1
+1689	5119	7671678624549227	CMakeFiles/TDS_MODERN.dir/src/app.cpp.obj	ed0f1d74551b3006
+1694	5237	7671678624600271	CMakeFiles/TDS_MODERN.dir/src/config.cpp.obj	da13a15fd3e5c647
+1700	5696	7671678624651952	CMakeFiles/TDS_MODERN.dir/src/assets.cpp.obj	65dccafa1afbe442
+5696	5952	7671678664620724	C:/Users/harri/OneDrive/Desktop/TDS MODERN/bin/TDS_MODERN.exe	cf8138b226c151c8

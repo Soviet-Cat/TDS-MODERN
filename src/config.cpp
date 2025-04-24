@@ -5,6 +5,7 @@ const std::string Config::path = APPDATA_PATH + "config.ini";
 
 void Config::load()
 {
+    std::cout << "Loading config: " << path << std::endl;
     std::ifstream ifs(path);
     if (ifs.is_open())
     {
@@ -31,6 +32,8 @@ void Config::load()
         ifs.close();
     } else
     {
+        std::cout << "Loading config failed: " << path << std::endl;
+        std::cout << "Loading config defaults" << std::endl;
         defaults();
     }
 }
@@ -43,10 +46,12 @@ void Config::save()
         create_directory(appDataFolder);
     }
 
+    std::cout << "Saving config: " << path << std::endl;
+
     std::ofstream ofs(path);
     if (!ofs.is_open())
     {
-        std::cerr << "Error opening config file: " << path << std::endl;
+        std::cerr << "Saving config failed: " << path << std::endl;
     }
 
     std::unordered_map<std::string, std::unordered_map<std::string, std::string>> config;
@@ -77,9 +82,10 @@ void Config::save()
 
 void Config::defaults()
 {
+    set("App.windowWidth", 1280);
+    set("App.windowHeight", 720);
     save();
 }
-
 
 void Config::print()
 {

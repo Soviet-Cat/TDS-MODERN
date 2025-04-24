@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/TDS_MODERN.dir/src/utils.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

@@ -14,8 +14,7 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"C:\\Users\\harri\\OneDrive\\Desktop\\TDS MODERN\\src",
-		"C:\\Users\\harri\\OneDrive\\Desktop\\TDS MODERN\\curl\\include\\curl"
+		"C:\\Users\\harri\\OneDrive\\Desktop\\TDS MODERN\\src"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],

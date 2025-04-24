@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(BIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/bin")
-set(CURL_DIR "${CMAKE_CURRENT_SOURCE_DIR}/curl")
 
 set(SOURCES
         "${SRC_DIR}/app.cpp"
@@ -19,10 +18,13 @@ set(SOURCES
 
 add_executable(TDS_MODERN ${SOURCES})
 
-target_include_directories(TDS_MODERN PRIVATE ${SRC_DIR} "${CURL_DIR}/include/curl")
+target_include_directories(TDS_MODERN PRIVATE ${SRC_DIR})
 
-target_link_libraries(TDS_MODERN
-        "${CURL_DIR}/lib/libcurl.a" ws2_32 crypt32
+target_link_libraries(TDS_MODERN PRIVATE
+        "E:/msys64/mingw64/lib/liburlmon.a"
+        "E:/msys64/mingw64/lib/libwindowscodecs.a"
+        "E:/msys64/mingw64/lib/libd2d1.a"
+        -static
 )
 
 set(CMAKE_CXX_FLAGS
