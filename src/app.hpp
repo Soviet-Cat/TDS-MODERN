@@ -8,6 +8,8 @@
 #include "assets.hpp"
 
 const std::string APP_WND_CLASS_NAME = "TDS_MODERN_WINDOW_CLASS";
+const int APP_DISPLAY_WIDTH = 640;
+const int APP_DISPLAY_HEIGHT = 360;
 
 class App
 {
@@ -18,17 +20,22 @@ class App
     static void destroyWindow();
     static bool processWindow();
 
+    static void createDisplay();
+
+    static void fullscreen();
+    static void borderless();
+    static void windowed();
+
     static LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
     static void initializeDirectX();
 
     private:
-    static DWORD wndStyle;
     static HWND hWnd;
-    static RECT wndRect;
     static HINSTANCE hInst;
     static WNDCLASSEX wndClass;
 
+    static ID2D1Bitmap* display;
     static ID2D1Factory* factory;
     static ID2D1HwndRenderTarget* renderTarget;
 };

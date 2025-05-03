@@ -34,5 +34,7 @@ int main()
     AssetLoader::stop();
     AssetDownloader::stop();
 
+    system("pause");
+
     return 0;
 }

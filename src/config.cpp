@@ -82,8 +82,9 @@ void Config::save()
 
 void Config::defaults()
 {
-    set("App.windowWidth", 1280);
-    set("App.windowHeight", 720);
+    set("App.windowWidth", 640);
+    set("App.windowHeight", 360);
+    set("App.windowMode", "borderless");
     save();
 }
 
