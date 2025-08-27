@@ -39,6 +39,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    cursor: none;
 }
 
 canvas {
@@ -54,106 +55,7 @@ canvas {
 <canvas></canvas>
 
 <script>
-let canvas = document.querySelector("canvas");
-if (!canvas) {
-    console.warn("Failed to query canvas element.\nCreating canvas element instead.");
-    canvas = document.createElement("canvas");
-    document.body.appendChild(canvas);
-}
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
-let gl = canvas.getContext("webgl2");
-if (!gl) {
-    console.warn("Failed to get WebGL-2.0 canvas context.\nTrying to get WebGL-1.0 canvas context instead.");
-    gl = canvas.getContext("webgl");
-    if (!gl) {
-        throw new Error("Failed to get WebGL-1.0 canvas context.\nNo more supported canvas contexts to get.");
-    }
-}
-
-// Window Events
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-
-// Input Events
-let keyboard = {
-    raw: {},
-    pressed: function(key) {
-        return this.raw[key];
-    }
-};
-let mouse = {
-    raw: {},
-    pressed: function(button) {
-        return this.raw[button];
-    }
-};
-
-window.addEventListener("keydown", (event) => {
-    keyboard.raw[event.key] = true;
-});
-window.addEventListener("keyup", (event) => {
-    keyboard.raw[event.key] = false;
-});
-window.addEventListener("mousedown", (event) => {
-    let button = "";
-    switch (event.button) {
-        case 0:
-            button = "left";
-            break;
-        case 1:
-            button = "middle";
-            event.preventDefault();
-            break;
-        case 2:
-            button = "right";
-            break;
-        default:
-            button = "unknown";
-            break;
-    }
-    mouse.raw[button] = true;
-});
-window.addEventListener("mouseup", (event) => {
-    let button = "";
-    switch (event.button) {
-        case 0:
-            button = "left";
-            break;
-        case 1:
-            button = "middle";
-            break;
-        case 2:
-            button = "right";
-            break;
-        default:
-            button = "unknown";
-            break;
-    }
-    mouse.raw[button] = false;
-});
-window.addEventListener("contextmenu", (event) => {
-    event.preventDefault();
-});
-
-// Loop
-function frame() {
-    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-    gl.viewport(0, 0, canvas.width, canvas.height);
-    gl.clearColor(0, 0, 0, 1);
-    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-
-    requestAnimationFrame(frame);
-}
-requestAnimationFrame(frame);
-
-// Cleanup
-window.addEventListener("unload", () => {
-
-});
 </script>
 
 </body>
