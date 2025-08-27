@@ -55,7 +55,102 @@ canvas {
 <canvas></canvas>
 
 <script>
+const tds = {
+    toString() {
+        return `"tds"`;
+    },
+    events: {
+        toString() {
+            return `"tds.events"`;
+        },
+        data: [],
+        window: {},
+        custom: {},
+        isSubscribed: function(obj) {
+            return this.data.indexOf(obj) !== -1;
+        },
+        subscribe: function(obj) {
+            if (this.isSubscribed(obj)) {
+                console.error(`Failed to subscribe ${obj} to ${this}. ${obj} is already subscribed.`);
+                return;
+            }
 
+            this.data.push(obj);
+        },
+        unsubscribe: function(obj) {
+            if (!this.isSubscribed(obj)) {
+                console.error(`Failed to unsubscribe ${obj} from ${this}. ${obj} isn't subscribed.`);
+                return;
+            }
+        },
+        fireCustom: function(event) {
+            const key = `_${event}`;
+            for (const obj of this.data) {
+                if (key in obj) {
+                    obj[key]();
+                }
+            }
+        },
+        hasCustom: function(event) {
+            return event in this.custom;
+        },
+        addCustom: function(event) {
+            if (this.hasCustom(event)) {
+                console.error(`Failed to add "${event}" to ${this}. "${event}" already exists.`);
+                return;
+            }
+
+            this.custom[event] = function() { this.fireCustom(event); };
+            this.custom[event] = this.custom[event].bind(this);
+        },
+        removeCustom: function(event) {
+            if (!this.hasCustom(event)) {
+                console.error(`Failed to remove "${event}" from ${this}. "${event}" doesn't exist.`);
+                return;
+            }
+
+            delete this.custom[event];
+        },
+        triggerCustom: function(event) {
+            if (!this.hasCustom(event)) {
+                console.error(`Failed to trigger "${event}" from ${this}. "${event}" doesn't exist.`);
+                return;
+            }
+
+            this.custom[event]();
+        },
+        fireWindow: function(name, event) {
+            const key = `_${name}`;
+            for (const obj of this.data) {
+                if (key in obj) {
+                    obj[key](event);
+                }
+            }
+        },
+        hasWindow: function(event) {
+            return event in this.window;
+        },
+        addWindow: function(name) {
+            if (this.hasWindow(name)) {
+                console.error(`Failed to add "${name}" to ${this}. "${name}" already exists.`);
+                return;
+            }
+
+            this.window[name] = function(event) { this.fireWindow(name, event); };
+            this.window[name] = this.window[name].bind(this);
+            window.addEventListener(name, this.window[name]);
+        },
+        removeWindow: function(event) {
+            if (!this.hasWindow(event)) {
+                console.error(`Failed to remove "${event}" from ${this}. "${event}" doesn't exist.`);
+                return;
+            }
+
+            window.removeEventListener(event, this.window[event]);
+            delete this.window[event];
+        }
+    }
+};
 </script>
 
 </body>
