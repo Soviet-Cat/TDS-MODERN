@@ -59,6 +59,13 @@ const tds = {
     toString() {
         return `"tds"`;
     },
+    gl: null,
+    webgl2: function() {
+        return this.canvas.version === 2;
+    },
+    webgl: function() {
+        return this.canvas.version === 1;
+    },
     events: {
         toString() {
             return `"tds.events"`;
@@ -219,15 +226,71 @@ const tds = {
             event.preventDefault();
         }
     },
-    
+    canvas: {
+        toString() {
+            return `"tds.canvas"`;
+        },
+        element: null,
+        context: null,
+        version: 0,
+        _load: function(event) {
+            this.element = document.querySelector("canvas");
+
+            this.context = this.element.getContext("webgl2");
+            this.version = 2;
+            if (!this.context) {
+                console.warn(`${this} failed to get "webgl2" canvas context. Trying to find "webgl" canvas context instead.`);
+                this.context = this.element.getContext("webgl");
+                this.version = 1;
+                if (!this.context) {
+                    this.version = -1;
+                    throw new Error(`${this} failed to "webgl" canvas context. `);
+                }
+            }
+
+            tds.gl = this.context;
+
+            this._resize(null);
+        },
+        _resize: function(event) {
+            this.element.width = window.innerWidth;
+            this.element.height = window.innerHeight;
+        },
+        _draw: function(event) {
+            this.context.bindFramebuffer(this.context.FRAMEBUFFER, null);
+            this.context.viewport(0, 0, this.element.width, this.element.height);
+            this.context.clearColor(1, 0, 0, 1);
+            this.context.clear(this.context.COLOR_BUFFER_BIT | this.context.DEPTH_BUFFER_BIT);
+        }
+    },
+    loop: {
+        toString() {
+            return `"tds.loop"`;
+        },
+        frame: function() {
+            tds.events.triggerCustom("update");
+            tds.events.triggerCustom("draw");
+
+            requestAnimationFrame(this.frame);
+        },
+        _load: function() {
+            this.frame = this.frame.bind(this);
+            requestAnimationFrame(this.frame);
+        }
+    }
 };
 
 // Window Events
 tds.events.addWindows(["load", "unload", "resize", "keydown", "keyup", "mousedown", "mouseup", "contextmenu"]);
+tds.events.addCustoms(["update", "draw"]);
 
 // Event Subscribers
 tds.events.subscribe(tds.keyboard);
 tds.events.subscribe(tds.mouse);
+tds.events.subscribe(tds.canvas);
+
+// Start Loop
+tds.events.subscribe(tds.loop);
 </script>
 
 </body>
