@@ -103,6 +103,11 @@ const tds = {
             this.custom[event] = function() { this.fireCustom(event); };
             this.custom[event] = this.custom[event].bind(this);
         },
+        addCustoms: function(events) {
+            for (const event of events) {
+                this.addCustom(event);
+            }
+        },
         removeCustom: function(event) {
             if (!this.hasCustom(event)) {
                 console.error(`Failed to remove "${event}" from ${this}. "${event}" doesn't exist.`);
@@ -140,6 +145,11 @@ const tds = {
             this.window[name] = this.window[name].bind(this);
             window.addEventListener(name, this.window[name]);
         },
+        addWindows: function(names) {
+            for (const name of names) {
+                this.addWindow(name);
+            }
+        },
         removeWindow: function(event) {
             if (!this.hasWindow(event)) {
                 console.error(`Failed to remove "${event}" from ${this}. "${event}" doesn't exist.`);
@@ -149,8 +159,75 @@ const tds = {
             window.removeEventListener(event, this.window[event]);
             delete this.window[event];
         }
-    }
+    },
+    keyboard: {
+        toString() {
+            return `"tds.keyboard"`;
+        },
+        data: {},
+        pressed: function(key) {
+            return this.data[key] === true;
+        },
+        release: function(key) {
+            return this.data[key] === false;
+        },
+        _keydown: function(event) {
+            this.data[event.key] = true;
+        },
+        _keyup: function(event) {
+            this.data[event.key] = false;
+        }
+    },
+    mouse: {
+        toString() {
+            return `"tds.mouse"`;
+        },
+        data: {},
+        pressed: function(key) {
+            return this.data[key] === true;
+        },
+        released: function(key) {
+            return this.data[key] === false;
+        },
+        buttonToKey: function(button) {
+            let key = "";
+            switch (button) {
+                case 0:
+                    key = "left";
+                    break;
+                case 1:
+                    key = "middle";
+                    break;
+                case 2:
+                    key = "right";
+                    break;
+                default:
+                    key = "unknown";
+                    break;
+            }
+            return key;
+        },
+        _mousedown: function(event) {
+            event.preventDefault();
+            this.data[this.buttonToKey(event.button)] = true;
+        },
+        _mouseup: function(event) {
+            event.preventDefault();
+            this.data[this.buttonToKey(event.button)] = false;
+        },
+        _contextmenu: function(event) {
+            event.preventDefault();
+        }
+    },
+    
 };
+
+// Window Events
+tds.events.addWindows(["load", "unload", "resize", "keydown", "keyup", "mousedown", "mouseup", "contextmenu"]);
+
+// Event Subscribers
+tds.events.subscribe(tds.keyboard);
+tds.events.subscribe(tds.mouse);
 </script>
 
 </body>
